@@ -26,5 +26,10 @@
           "Tests\\": "tests/"
       }
   },
+  "scripts": {
+    "post-root-package-install": [
+        "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ]
+  },
   "minimum-stability": "dev"
 }
